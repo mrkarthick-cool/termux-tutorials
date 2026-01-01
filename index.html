@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Termux Ethical Hacking Course 2026</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Segoe UI,Tahoma,sans-serif;
+  background:#0b0f14;
+  color:#e6edf3;
+  text-align:center;
+}
+header{
+  padding:80px 20px;
+  background:radial-gradient(circle at top,#00ffcc22,#0b0f14 60%),
+             linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  position:relative;
+  overflow:hidden;
+}
+header::before{
+  content:"";
+  position:absolute;
+  width:600px;height:600px;
+  border-radius:50%;
+  background:conic-gradient(from 0deg,#00ffcc,#00ffaa,#00ffcc);
+  animation:spin 18s linear infinite;
+  opacity:.15;
+  top:-300px;left:50%;
+  transform:translateX(-50%);
+}
+@keyframes spin{
+  to{transform:translateX(-50%) rotate(360deg)}
+}
+header h1{color:#00ffcc;font-size:2.6em;margin:0}
+header p{color:#c9d1d9}
+
+nav{
+  position:sticky;top:0;z-index:999;
+  backdrop-filter:blur(10px);
+  background:#020617cc;
+}
+nav ul{
+  display:flex;flex-wrap:wrap;
+  justify-content:center;
+  list-style:none;margin:0;padding:10px
+}
+nav li{margin:6px 12px}
+nav a{color:#00ffcc;text-decoration:none}
+nav a:hover{text-decoration:underline}
+
+section{
+  max-width:1100px;
+  margin:40px auto;
+  padding:40px 20px;
+  background:#020617;
+  border-radius:18px;
+  box-shadow:0 0 30px #00ffcc15;
+}
+section h2{color:#00ffcc}
+
+pre{
+  background:#000814;
+  padding:16px;
+  border-left:4px solid #00ffcc;
+  text-align:left;
+  overflow-x:auto;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px
+}
+th,td{
+  border:1px solid #1f2937;
+  padding:10px
+}
+th{color:#00ffcc;background:#000814}
+
+.warning{
+  margin:20px auto;
+  padding:15px;
+  background:#1f2937;
+  border-left:4px solid #f87171;
+  max-width:700px;
+}
+
+footer{
+  padding:30px;
+  background:#000814;
+  color:#9ca3af;
+}
+
+@media(max-width:600px){
+  header h1{font-size:2em}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Termux Ethical Hacking Course 2026</h1>
+<p>Complete Beginner → Pro Roadmap using Termux on Android</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#install">Install</a></li>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#proot">Proot</a></li>
+<li><a href="#apk">APK</a></li>
+<li><a href="#ethics">Ethics</a></li>
+</ul>
+</nav>
+
+<section id="intro">
+<h2>What is Termux?</h2>
+<p>Termux is a Linux terminal emulator for Android, turning your phone into a portable cybersecurity lab.</p>
+<div class="warning">Educational & authorized testing only.</div>
+</section>
+
+<section id="install">
+<h2>Installation</h2>
+<ol style="text-align:left;max-width:600px;margin:auto">
+<li>Install F-Droid</li>
+<li>Install Termux</li>
+<li>Open Termux</li>
+</ol>
+<pre>pkg update && pkg upgrade</pre>
+</section>
+
+<section id="tools">
+<h2>Essential Tools</h2>
+<pre>pkg install git python nmap curl wget</pre>
+</section>
+
+<section id="apk">
+<h2>APK Analysis (Ethical)</h2>
+<pre>
+pkg install apktool jadx
+apktool d target.apk
+apktool b target -o new.apk
+</pre>
+</section>
+
+<section id="ethics">
+<h2>Ethics & Law</h2>
+<ul style="text-align:left;max-width:600px;margin:auto">
+<li>Practice only on labs</li>
+<li>No illegal hacking</li>
+<li>Respect privacy</li>
+</ul>
+</section>
+
+<footer>
+<p>© 2026 Termux Ethical Hacking Course</p>
+<p>Developed by <b>Drak24Evil</b></p>
+<p>Telegram: @Drak24Evil</p>
+</footer>
+
+</body>
+</html>
